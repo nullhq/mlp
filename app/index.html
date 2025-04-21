@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Iris class prédictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Implémentation d'un MLP <br> (Cas de la classification d'iris.)</h1>
+    <ol class="features_setter">
+      <div class="feature">
+        <li class="feature_length">
+          <input type="number" name="sepallength" id="sepallength" min="4" max="8" step="0.1" required value="6.2">
+        </li>
+        <label for="sepallength">Longueur Sépale</label>
+      </div>
+      <div class="feature">
+        <li class="feature_length">
+          <input type="number" name="sepalwidth" id="sepalwidth" min="2" max="5" step="0.1" required value="3.4">
+        </li>
+        <label for="sepalwidth">Largeur Sépale</label>
+      </div>
+      <div class="feature">
+        <li class="feature_length">
+          <input type="number" name="petallength" id="petallength" min="1" max="7" step="0.1" required value="5.4">
+        </li>
+        <label for="petallength">Longueur Pétale</label>
+      </div>
+      <div class="feature">
+        <li class="feature_length">
+          <input type="number" name="petalwidth" id="petalwidth" min="0" max="3" step="0.1" required value="2.3">
+        </li>
+        <label for="petalwidth">Largeur Pétale</label>
+      </div>
+    </ol>
+    <button id="predire" type="submit">Prédire le type d'iris</button>
+    <div id="iris_resultat">
+      <h2 id="iris_espece">Iris Virginica</h2>
+      <img src="./images/virginica.jpg" id="iris_espece_image" alt="iris">
+    </div>
+  </main>
+  <footer>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ysabeau SC", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 14px;
+    background: linear-gradient(180deg, hsl(234, 17%, 12%) 25%, #241e2b 75%);
+    color: #FFFFFF;
+}
+
+main {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(./images/bg-stars.svg) no-repeat 50% 10%;
+    background-position: center;
+    background-size: contain;
+    text-transform: uppercase;
+}
+
+main h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+main .features_setter {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3.5625rem;
+    border-radius: 8px;
+    list-style: none;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature_length::after, .feature_length::before {
+    width: 0.5rem;
+    height: 0.5rem;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -0.25rem;
+    border-radius: 50%;
+    background-color: hsl(234, 17%, 12%);
+    z-index: 1;
+}
+
+.feature_length::before {
+    left: -0.25rem;
+}
+
+.feature_length{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #2a2b3c 50%, hsl(236, 21%, 26%) 50%);
+    box-shadow: 0 0.3125rem 0 0 hsl(234, 17%, 12%);
+}
+
+.feature_length input {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    border: none;
+    background: none;
+    outline: none;
+    color: hsl(345, 95%, 68%);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.feature_length input::placeholder {
+    color: hsl(345, 95%, 68%);
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.feature  label {
+    width: 100%;
+    font-size: .8rem;
+    font-weight: 400;
+    color: hsl(237, 18%, 59%);
+    text-align: center;
+    text-transform: lowercase;
+}
+
+#predire {
+    width: 60%;
+    height: 45px;
+    margin-top: 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: hsl(345, 95%, 68%);
+    cursor: pointer;
+}
+
+#iris_resultat {
+    width: 200px;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#iris_resultat img {
+    width: 200px;
+    border: solid 2px #FFFFFF;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    background: url(./images/pattern-hills.svg) no-repeat 80% 100% / auto 100%;
+    background-size: cover;
+    background-position-x: 100%;
+}
